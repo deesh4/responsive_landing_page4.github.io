@@ -1,0 +1,248 @@
+﻿ body {
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+			font-family: 'PT Sans Caption', sans-serif;
+            text-rendering: optimizeLegibility;
+        }
+/************************************* Hamburger Navbar Animation******************************/
+.animated-icon1 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon1 span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+.animated-icon1 span {
+        background: white;
+    }
+
+.animated-icon1 span:nth-child(1) {
+            top: 0px;
+        }
+
+.animated-icon1 span:nth-child(2) {
+            top: 10px;
+        }
+
+.animated-icon1 span:nth-child(3) {
+            top: 20px;
+        }
+
+.animated-icon1.open span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+
+.animated-icon1.open span:nth-child(2) {
+        top: 11px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+
+.animated-icon1.open span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+/************************************* Hamburger Navbar Animation****************************/
+
+/************************************Navbar Hover Effect*************************************/
+@media screen and (max-width:576px) {
+    .navbar .navbar-brand img {
+        height: 30px !important;
+    }
+}
+/********************************************carousel ***********************************/
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #000000;
+    overflow: hidden;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+     .carousel-caption p{
+       font-size:12px;
+       font-weight:300;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+     .carousel-caption p{
+         font-size:18px;
+        font-weight:500;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     .carousel-caption p{
+         font-size:24px;
+         font-weight:700;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+     .carousel-caption p{
+        font-size:28px;
+        font-weight:700;
+    }
+}
+
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    padding: 0px !important;
+}
+/************************************Card (Heading)*************************************/
+.card {
+    border: 0px solid  #808080;
+}
+.jumbotron-fluid {
+    padding: 10px !important;
+    background-color: #ffffff;
+}
+.jumbotron-fluid .container p {
+        font-weight: 900;
+        color: #000000;
+    }
+/************************************Title Heading*************************************/
+.pagetitle 
+{
+    margin: 15px;
+    padding: 5px !important;
+    background-color: #ffffff;
+}
+.pagetitle h4, .pagetitle h5 
+    {
+        text-align: center;
+        word-spacing: 1px;
+        font-weight: 700;
+    }
+.pagetitle h4:after, .pagetitle h5:after 
+        {
+            display: block;
+            height: 2px;
+            background-color:  #000000;
+            content: "";
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+@media screen and (max-width:550px) {
+    .pagetitle h4:after, .pagetitle h5:after {
+        display: block;
+        height: 2px;
+        background-color: #808080;
+        content: "";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+/************************************Footer *************************************/
+ .footer {
+            background: #000000;
+            color :white;
+        }
+.footer h3 {
+                
+                font-weight: 500;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+.footer h3:after {
+                    display: block;
+                    height: 2px;
+                    background-color: white;
+                    content: "";
+                    width: 100px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                }
+.footer a {
+                
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                border-bottom: 2px solid transparent;
+                transition: border-bottom 0.2s,color 0.2s;
+                padding-bottom: 5px;
+                word-wrap: normal;
+            }
+
+ .footer a:hover {
+                    border-bottom: 2px solid #eeeeee;
+                }
+.itest {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+.container .btn-cont {
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100vh;
+            display: flex;
+        }
+.container .btn-cont .btn-holder {
+                justify-content: flex-end;
+                display: flex;
+            }
+p.big {
+            line-height: 1.5;
+        }    
